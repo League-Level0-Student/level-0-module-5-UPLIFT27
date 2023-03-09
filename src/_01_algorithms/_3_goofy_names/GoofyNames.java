@@ -11,17 +11,28 @@ public class GoofyNames {
 		String goofyName = "";
 
 		// 1. Ask the user to enter their name
-
+String name = JOptionPane.showInputDialog("What is your name");
 		// 2. Print upper case name to the console using .toUpperCase()
 		//    Run your program to see that this works.
+System.out.println(name.toUpperCase());
 
 		// 3. Loop through each character of the name (steps 4 - 7).
 		//    HINT: Use .length() to determine the number of characters in the String.
 
 				// 4. Create a char variable to store the next character of the name
-				//    use .charAt()
+				//    use .charAt
+int nameint = name.length();
+
 	
-				
+		for(int i=0; i<=nameint; i++)	
+		{
+			if(nameint%i==0)
+			{
+				String L = name.charAt(i);
+			}
+		
+		
+		}
 				// 5. Use MODULO operator (%) to identify if it is an EVEN or ODD character.
 			
 			
