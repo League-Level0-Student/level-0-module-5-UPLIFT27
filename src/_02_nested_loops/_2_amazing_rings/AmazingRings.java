@@ -50,6 +50,15 @@ public class AmazingRings extends PApplet {
     @Override
     public void setup() {
 
+    	setSize
+    	
+    	noFill();
+    	ellipses(30,30,30,30); 
+    	
+    	
+    	
+    	
+ 
     }
 
     @Override
