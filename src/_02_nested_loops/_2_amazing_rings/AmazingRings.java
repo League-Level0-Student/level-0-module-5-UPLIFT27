@@ -39,7 +39,7 @@ import processing.core.PImage;
 public class AmazingRings extends PApplet {
 	static final int WIDTH = 800;
 	static final int HEIGHT = 600;
-
+int dir=1;
 
 	int x=20;
 	int y=200;
@@ -79,17 +79,13 @@ public class AmazingRings extends PApplet {
     	
     		
     	}
-    	if(i<=50)
+    	if(x<=0||x>=width)
     	{
-    		x+=5;
-    	 w-=5;
+    	dir=dir*-1;
     	}
-    	else if(>=50)
-    	{
-    		  x-=10;
-    		  w+=10;
-    	}
-  
+    	
+    	  x-=10*dir;
+		  w+=10*dir;
     }
 
 	static public void main(String[] args) {
