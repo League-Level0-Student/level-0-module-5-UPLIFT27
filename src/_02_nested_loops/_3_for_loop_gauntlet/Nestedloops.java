@@ -179,9 +179,9 @@ public class Nestedloops {
 		
 		
 		
-		for(int g=100; g>=0; g--)
+		for(int g=0; g<=100; g++)
 		{
-			JOptionPane.showMessageDialog(null, g);
+			System.out.print(100-g + " " );
 			
 			
 		}

@@ -48,7 +48,7 @@ public class IntroToMethods {
 	}
 
 	public static String method2() {
-		return "Method2";
+		return "method2";
 	}
 
 	public static void method3(String message) {
