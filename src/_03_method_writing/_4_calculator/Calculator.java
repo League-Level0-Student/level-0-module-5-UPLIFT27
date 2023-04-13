@@ -68,7 +68,7 @@ public static int divided(int a, int b)
 {
 
 	return a/b;
-	int i;
+
 	
 }
 
