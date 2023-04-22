@@ -15,15 +15,19 @@ public class Code4Life {
 	 * *****************/
 	static boolean canPlaySounds = true;
 	
-	
+	public static void main(String[]args)
+	{
 	// 1. Ask the user how many hours they spent coding this week.
 
-	int hours = JOptionPane.showInputDialog("How many hours did you spend coding this week");
+	String hours = JOptionPane.showInputDialog("How many hours did you spend coding this week");
+	
+			int time = Integer.parseInt(hours);
+	
 	
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
 	
-	if(hours<=2)
+	if(time<=2)
 	{
 		JOptionPane.showMessageDialog(null, "Stop watching Youtube and write code instead");
 	}
@@ -33,7 +37,7 @@ public class Code4Life {
 	// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 	// they're a Code Ninja
 	
-	if(hours>=3||hours<=5)
+	if(time>=3&&time<=5)
 	{
 		JOptionPane.showMessageDialog(null, "You are a Code Ninja");
 	}
@@ -41,12 +45,12 @@ public class Code4Life {
 	// 4. If it is more than 5, call the playBatmanTheme  method, then 
 	//    call the displayBatman method.
 
-if(hours>5)
+if(time>5)
 {
-	playBatmanTheme();
+	displayBatman();
 }
 
-	
+	}
 	private static void playBatmanTheme() {
 	// NOTE: Download batman.wav from league-sounds on GitHub: https://github.com/jointheleague/league-sounds
 	//	     Then put batman.wav into the "_2_code_4_life" project
@@ -76,5 +80,5 @@ if(hours>5)
 		JOptionPane.showMessageDialog(null, "", "You must be Batman!", 0, icon);
 	}
 	
-
+	
 }
