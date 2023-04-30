@@ -54,11 +54,16 @@ public class EvilPolygonsChallenge {
 			}
 
 			else if (shape.equals("triangle")) {
-
+triangle();
+			}
+			else if(shape.equals("octagon"))
+			{
+			octagon();
 			}
 
 			rob.penUp();
-			rob.move(105);
+			rob.turn(45);
+			rob.move(180);
 
 		}
 	}
@@ -71,14 +76,22 @@ public class EvilPolygonsChallenge {
 		}
 	}
 
-	public static void traingle() {
+	public static void triangle() {
 		for (int m = 3; m > 0; m--) {
-			rob.turn(60);
+			rob.turn(120);
 			rob.move(100);
 
 		}
 
 	}
+	public static void octagon() {
+		for(int m=8; m>0; m--)
+		{
+			rob.turn(45);
+			rob.move(50);
+		}
+	}
+	
 	// 6. Make it so your shapes do not overlap
 
 	// 7. Challenge: add more colors to the Option Dialog.

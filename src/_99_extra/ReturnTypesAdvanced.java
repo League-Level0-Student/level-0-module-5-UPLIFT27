@@ -11,11 +11,27 @@ public class ReturnTypesAdvanced {
 	
 	public static void main(String[] args) {
 		//1. Ask the user how many sides they want their shape to be
+	String number =	JOptionPane.showInputDialog("How many sides do you want the shape to be");
 		
 		//2. Call canMakeShape() and save what is returned into a variable
+		int num = Integer.parseInt(number);
+	
+		canMakeShape(num);
+	
 		
 		//3. If the shape CAN be drawn
 		
+	if(canMakeShape())
+	{
+		
+		int deg = calculateTurnAngle(num);
+		
+	}
+	
+	
+	
+	drawPolygon(num, deg);
+	
 			//4. Call and save what is returned from calculateTurnAngle()
 		
 			//5. Use drawPolygon() to draw your shape

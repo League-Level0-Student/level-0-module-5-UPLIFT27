@@ -9,5 +9,32 @@ public class HiddenTypes {
 	static String unknown3 = ""+(char)(rand.nextInt(26)+65)+(char)(rand.nextInt(26)+97)+(char)(rand.nextInt(26)+65)+(char)(rand.nextInt(26)+97)+(char)(rand.nextInt(26)+65);
 	static char unknown4 = (char)(rand.nextInt(26)+65);
 	static boolean unknown5 = rand.nextBoolean();
+
+
+
+public static void main(String[] args) {
+	
+	System.out.println(unknown3);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
+}
+
+
+
+
 
