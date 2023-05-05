@@ -16,21 +16,24 @@ public class ReturnTypesAdvanced {
 		//2. Call canMakeShape() and save what is returned into a variable
 		int num = Integer.parseInt(number);
 	
-		canMakeShape(num);
+	boolean tr =	canMakeShape(num);
 	
 		
 		//3. If the shape CAN be drawn
 		
-	if(canMakeShape())
+	if(tr)
 	{
 		
 		int deg = calculateTurnAngle(num);
-		
+		drawPolygon(num, deg);	
+	}
+	else
+	{
+		System.out.print("not enough sides");
 	}
 	
 	
 	
-	drawPolygon(num, deg);
 	
 			//4. Call and save what is returned from calculateTurnAngle()
 		
