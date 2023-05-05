@@ -18,6 +18,7 @@ public class ReturnTypesAdvanced {
 	
 	boolean tr =	canMakeShape(num);
 	
+	int i;
 		
 		//3. If the shape CAN be drawn
 		

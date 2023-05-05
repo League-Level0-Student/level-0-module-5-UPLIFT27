@@ -10,7 +10,7 @@ public class ReturnTypesPractice {
 		String three = method3();
 		char four = method4();
 		boolean five = method5();
-		
+int i;		
 		
 		System.out.println(one);
 		System.out.println(two);

@@ -31,6 +31,8 @@ public class ReturnTypesRobot {
 		
 	}
 	
+	int i;
+	
 	static void crazyMove() {
 		rob.setY(500);
 		rob.setSpeed(100);
